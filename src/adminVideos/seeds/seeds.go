@@ -17,6 +17,9 @@ func main(){
 
 	ForUsers() //创建用户
 	//ForVideoImage() //创建上传视频的封面
-	//ForVideos() //创建上传视频
+	ForVideos() //创建上传视频
+	ForClass()
+
+	ForVideoPerson() //添加演员
 }
 
