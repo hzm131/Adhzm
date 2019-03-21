@@ -8,8 +8,8 @@ import (
 
 //创建视频封面返回id
 func CreatedImage(str string) (int,error){
-	var img createtable.VideoImage
-	img.ImagePath = str
+	var img createtable.Image
+	img.Path = str
 	find := models.Db.Create(&img)
 	if err:=find.Error; err!=nil{
 		fmt.Println("创建失败",err)

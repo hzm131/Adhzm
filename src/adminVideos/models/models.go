@@ -21,12 +21,13 @@ func init(){
 	//创建表 自动迁移
 	Db.AutoMigrate(&createtable.Users{},
 	&createtable.Videos{},
-	&createtable.VideoImage{},
-	&createtable.VideoSrc{},
-	&createtable.VideoPerson{},
+	&createtable.Image{},
+	&createtable.Src{},
+	&createtable.VideoPersons{},
 	&createtable.Actor{},
 	&createtable.Comment{},
-	&createtable.Persons{})
+	&createtable.Persons{},
+	&createtable.Classes{})
 }
 
 func CloseDB() {
